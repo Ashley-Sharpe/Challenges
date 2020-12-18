@@ -1,14 +1,18 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Cafe_Repo;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace Cafe_Testing
 {
     [TestClass]
-    public class UnitTest1
+    public class CafeUnitTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void SetMealName_ShouldSetCorrectString()
         {
+            MenuItems menu = new MenuItems();
+
+            menu.MealName = "hamburger";
         }
     }
 }

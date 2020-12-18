@@ -6,20 +6,42 @@ using System.Threading.Tasks;
 
 namespace Insurance_Repo
 {
-   public class Claims_Repo
+    public class Claims_Repo
     {
-        public bool EnquingClaimToQueue(Claim content)
+        public Queue<Claims> _queueOfClaims = new Queue<Claims>();
+        //Create
+        public void AddClaimToQueue(Claims claim)
         {
-            int claimLength = _queue.Count();
-            _queue.Enqueue(content);
-            bool wasAdded = claimLength + 1 == _queue.Count();
-            return wasAdded;
+            _queueOfClaims.Enqueue(claim);
         }
 
-        public void CreateQueue(Claim content)
+        //Read
+        public Queue<Claims> GetClaims()
         {
-            _queue.Enqueue(content);
+            return _queueOfClaims;
+        }
+
+        //Delete
+        public bool RemoveClaimItemFromQueue()
+        {
+           
+            int initialCount = _queueOfClaims.Count;
+            _queueOfClaims.Dequeue();
+
+            if (initialCount > _queueOfClaims.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
         }
 
     }
+
+
 }
+

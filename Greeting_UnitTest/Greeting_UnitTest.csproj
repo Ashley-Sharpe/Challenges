@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{240E0A52-9B5E-48AA-B65C-B5F230A5D483}</ProjectGuid>
+    <ProjectGuid>{75D5FC18-ED1C-4A4E-9173-A1F7060E5D69}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cafe_Testing</RootNamespace>
-    <AssemblyName>Cafe_Testing</AssemblyName>
+    <RootNamespace>Greeting_UnitTest</RootNamespace>
+    <AssemblyName>Greeting_UnitTest</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -54,16 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Cafe_Repo\Cafe_Repo.csproj">
-      <Project>{6aa46708-42a8-47a0-88e9-a08dc1f30325}</Project>
-      <Name>Cafe_Repo</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Cafe_UI\Cafe_UI.csproj">
-      <Project>{bd4dc029-21d4-489a-ac51-8e9d0f2e7de7}</Project>
-      <Name>Cafe_UI</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

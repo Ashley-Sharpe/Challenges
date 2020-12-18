@@ -14,8 +14,7 @@ namespace Cafe_Repo
         public decimal Price { get; set; }
         public string Ingredients { get; set; }
 
-        public MenuItems(int v, string v1) { }
-
+       
         public MenuItems(int mealNumber, string mealName, string itemDescription, decimal price, string ingredients)
         {
             MealNumber = mealNumber;
@@ -25,8 +24,7 @@ namespace Cafe_Repo
             Ingredients = ingredients;
         }
 
-        public MenuItems()
-        {
-        }
+        public MenuItems() { }
+        
     }
 }

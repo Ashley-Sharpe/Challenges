@@ -68,7 +68,7 @@ namespace Cafe_Repo
         {
             foreach (MenuItems menuItems in _listOfMenuItems)
             {
-                if (menuItems.MealName == mealName)
+                if (menuItems.MealName.ToLower() == mealName)
                 {
                     return menuItems;
                 }
